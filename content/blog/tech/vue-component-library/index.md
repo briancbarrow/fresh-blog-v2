@@ -1,8 +1,8 @@
 ---
 title: How to Create and Publish a Vue Component Library
-
-img:
-alt:
+description: A guide to creating and publishing a Vue component library.
+img: images/library.png
+alt: Library of books
 date: 07-22-2020
 published: true
 ---

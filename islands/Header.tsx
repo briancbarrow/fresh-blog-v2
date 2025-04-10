@@ -5,20 +5,13 @@ export const Header: FunctionalComponent = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header class="bg-gradient-to-r from-teal-200 to-blue-200 text-white shadow">
+    <header class="bg-gradient-to-r from-slate-100 to-blue-100 text-slate-800 shadow">
       <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Global">
         <div class="flex items-center justify-between h-16">
-          {/* Logo */}
-
           <a
             href="/"
             class="flex items-center space-x-3 text-xl font-bold text-gray-900"
           >
-            <img
-              src="/avatar.jpeg"
-              alt="Brian Barrow"
-              class="h-10 w-10 rounded-full mr-2"
-            />
             Brian Barrow
           </a>
 

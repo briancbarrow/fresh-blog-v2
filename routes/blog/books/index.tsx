@@ -52,7 +52,7 @@ export default function Home({ data }: PageProps<BlogPost[]>) {
             class="border-b border-gray-200 dark:border-gray-700 pb-4"
           >
             <a href={`/blog/${post.slug}`} class="block">
-              <h2 class="text-2xl font-semibold text-teal-700 dark:text-teal-400 hover:underline">
+              <h2 class="text-2xl font-semibold text-teal-500 hover:underline">
                 {post.title}
               </h2>
               <p class="text-gray-700 dark:text-gray-300 mt-2">

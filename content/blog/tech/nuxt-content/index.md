@@ -7,7 +7,7 @@ photographerLink: https://unsplash.com/@kimberlyfarmer?utm_source=unsplash&utm_m
 unsplashLink: https://unsplash.com/s/photos/blog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 photographer: Kimberly Farmer
 date: 08-01-2021
-published: false
+published: true
 ---
 
 Nuxt by itself is a powerful tool for creating websites and applications. Part

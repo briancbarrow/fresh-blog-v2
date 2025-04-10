@@ -55,6 +55,7 @@ export const handler: Handlers<Data> = {
       data: data ?? {},
       slug: slug,
       title: data.title,
+      date: data.date,
       href: `/blog/${slug}`,
       file: url.pathname,
       book_id: data.book_id,

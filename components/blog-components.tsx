@@ -8,6 +8,7 @@ export interface Page {
   data: Record<string, string>;
   slug: string;
   title: string;
+  date: string;
   category?: string;
   href: string;
   file: string;
@@ -84,6 +85,10 @@ function Content(props: { page: Page }) {
       <h1 class="block md:mt-10 mt-4 text-3xl font-extrabold leading-8 tracking-tight text-center text-gray-900  sm:text-4xl">
         {props.page.title}
       </h1>
+      <p class="mt-2 text-center text-gray-500 text-sm">
+        {props.page.date}
+      </p>
+
       <p class="mt-8 text-xl leading-8 text-gray-500">{description}</p>
       <div
         class="mx-auto mt-6 prose prose-lg text-gray-500 markdown-body"

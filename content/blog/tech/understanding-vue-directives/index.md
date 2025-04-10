@@ -1,11 +1,14 @@
 ---
 title: Understanding Vue Directives
 description: Directives are a huge part of Vue, so it is important that we understand them as developers. Not only are they an essential part of the Vue framework out of the box, but by understanding them more fully we can create more powerful functionality in our apps.
-img: mountain.jpg
+img: images/mountain.jpg
 alt: understanding vue directives
 date: 08-02-2021
-published: false
+published: true
 ---
+
+:warning: **NOTE**: This applies to Vue 2. Vue 3 has some changes and the
+following might not apply.
 
 ## What is a directive?
 

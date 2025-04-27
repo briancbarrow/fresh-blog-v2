@@ -30,14 +30,14 @@ export function BlogPage(props: PageProps<Data>) {
   return (
     <>
       <Head>
-        <title>{props.data.page?.title ?? "Not Found"} | Brian Blog</title>
+        <title>{props.data.page?.title ?? "Not Found"} | Brian's Blog</title>
         {/* <link rel="stylesheet" href="/gfm.css" /> */}
         <style>${gfm.CSS}</style>
         <meta name="twitter:card" content="summary_large_image" />
         {description && <meta name="description" content={description} />}
         <meta
           property="og:title"
-          content={`${props.data.page?.title ?? "Not Found"} | Brian Blog`}
+          content={`${props.data.page?.title ?? "Not Found"} | Brian's Blog`}
         />
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
@@ -47,6 +47,12 @@ export function BlogPage(props: PageProps<Data>) {
           content={props.url.origin + props.data.page.img}
         />
         <meta name="robots" content="index, follow" />
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="7c2e6e2a-2f2d-4963-ade4-1cfde33af0e9"
+        >
+        </script>
       </Head>
       {/* <NavBar /> */}
       <Main

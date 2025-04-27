@@ -7,9 +7,9 @@ date: 2025-04-26
 published: true
 ---
 
-So I've been messing around with Elixir and Phoenix for a little bit now, and
-being a web developer I have definitely played with LiveView. Overall my
-experience has been positive. A while back I did see this post on Bluesky from
+I've been messing around with Elixir and Phoenix for a little bit now, and being
+a web developer I have definitely played with LiveView. Overall my experience
+has been positive. A while back I did see this post on Bluesky from
 [Brian Cardarella](https://bsky.app/profile/bcardarella.bsky.social/post/3lkv6sioelc2x)
 highlighting [Dimitrios's blog post](https://dnlytras.com/blog/on-liveview)
 about their experience with LiveView.

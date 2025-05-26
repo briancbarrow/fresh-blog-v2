@@ -1,9 +1,16 @@
 import { FreshContext } from "$fresh/server.ts";
 
 export const handler = async (
-  _req: Request,
-  _ctx: FreshContext,
+  req: Request,
+  ctx: FreshContext,
 ): Promise<Response> => {
+  const origin = req.headers.get("Origin") || "*";
+  const resp = await ctx.next();
+  const headers = resp.headers;
+
+  headers.set("Access-Control-Allow-Origin", origin);
+  headers.set("Access-Control-Allow-Methods", "GET, OPTIONS");
+
   const randomNumber = Math.floor(Math.random() * 6);
   // wait for randomNumber seconds
   const wait = new Promise((resolve) =>

@@ -7,6 +7,7 @@ import * as $_app from "./routes/_app.tsx";
 import * as $_layout from "./routes/_layout.tsx";
 import * as $about from "./routes/about.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
+import * as $api_random from "./routes/api/random.ts";
 import * as $blog_slug_ from "./routes/blog/[slug].tsx";
 import * as $blog_books_slug_ from "./routes/blog/books/[slug].tsx";
 import * as $blog_books_index from "./routes/blog/books/index.tsx";
@@ -23,6 +24,7 @@ const manifest = {
     "./routes/_layout.tsx": $_layout,
     "./routes/about.tsx": $about,
     "./routes/api/joke.ts": $api_joke,
+    "./routes/api/random.ts": $api_random,
     "./routes/blog/[slug].tsx": $blog_slug_,
     "./routes/blog/books/[slug].tsx": $blog_books_slug_,
     "./routes/blog/books/index.tsx": $blog_books_index,

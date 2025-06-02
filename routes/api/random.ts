@@ -3,10 +3,9 @@ import { FreshContext, Handlers } from "$fresh/server.ts";
 export const handler: Handlers = {
   async GET(
     req: Request,
-    ctx: FreshContext,
+    _ctx: FreshContext,
   ) {
     const origin = req.headers.get("Origin") || "*";
-
 
     const headers = new Headers();
 
@@ -38,5 +37,5 @@ export const handler: Handlers = {
         },
       );
     }
-  }
-}
+  },
+};

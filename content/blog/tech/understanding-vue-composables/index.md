@@ -1,7 +1,7 @@
 ---
 title: Understanding Vue Composables
 description: Learn how to use Vue composables to simplify and reuse stateful logic in your Vue 3 apps, with practical examples and tips for real-world projects.
-img: images/composables.jpg
+img: images/composables.png
 alt: understanding vue composables
 date: 06-11-2025
 published: true

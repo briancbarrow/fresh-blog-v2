@@ -15,7 +15,7 @@ As the coach for both of my sons' soccer teams, I am always trying to find ways 
 
 Obviously, I want to do this within reason, and at a level that will not put too much pressure on the kids. They are only kids after all, and too much pressure isn't healthy.
 
-I also don't have time to talk to each player individually. We have 27 kids across the two teams so taking time to reflect with each one individually after each game isn't possible. The idea of being able to use AI to prompt the kids to think a little bit deeper about the game and reflect on what they can improve sounded like a really good use of and AI agent.
+I also don't have time to talk to each player individually. We have 27 kids across the two teams so taking time to reflect with each one individually after each game isn't possible. The idea of being able to use AI to prompt the kids to think a little bit deeper about the game and reflect on what they can improve sounded like a really good use of an AI agent.
 
 # Re-writing in Elixir/Phoenix
 
@@ -31,7 +31,7 @@ I also added a clean looking loading indicator for when the Agent is "thinking".
 
 ```elixir
 <%= if @is_loading do %>
-  <div class="text-left badge bade-secondary bg-secondary text-secondary-content">
+  <div class="text-left badge badge-secondary bg-secondary text-secondary-content">
     <span class="loading loading-dots loading-md"></span>
   </div>
 <% end %>
@@ -40,6 +40,8 @@ I also added a clean looking loading indicator for when the Agent is "thinking".
 The other thing I really wanted to add was a way for the kids to more easily add their side of the conversation. With the AI Agent being a text based interaction, and most 8 year olds not being great at typing on a keyboard, I thought having a way for them to speak to add their side would be good. Having worked at Deepgram, I knew it would be relatively easy to get a speech-to-text feature added.
 
 This was a really interesting feature to add in a Phoenix LiveView application. Up to this point, I haven't had a lot of need for JS Hooks in my LiveView projects. Using Claude as a pair programming partner I was able to better understand how Hooks work within LiveView, and get the feature added to my project. Hooks are definitely something I need to look into more, and I also wonder if it would be easier using something like AlpineJS or even LiveSvelte or LiveVue. Those things have been on my list of things to look into, so that will definitely be something I explore in the coming weeks.
+
+Rather than just submitting the text returned from the speech-to-text, I set it as the value in the textarea, just so the user can edit it if they want. I'll need to look at how that feature gets used to see if the ergonomics of the feature are easy to use. I figured it would be good for now.
 
 ## End Result
 

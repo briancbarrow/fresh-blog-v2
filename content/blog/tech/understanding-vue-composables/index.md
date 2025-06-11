@@ -1,10 +1,10 @@
 ---
 title: Understanding Vue Composables
 description: Learn how to use Vue composables to simplify and reuse stateful logic in your Vue 3 apps, with practical examples and tips for real-world projects.
-img: images/composables.png
+img: vue-composables/cover.png
 alt: understanding vue composables
 date: 06-11-2025
-published: true
+published: false
 ---
 
 Vue composables are a very helpful tool when developing Vue applications. Before diving into the post below I want to mention that the documentation for Vue is _really_ good. [The page on composables](https://vuejs.org/guide/reusability/composables) explains the basics really well and will get you 90 percent of the way there. I am writing this post because I think the examples in the docs could go a little deeper in explaining how things can work inside of a composable. I will be reiterating some of the information from the docs, but I will also provide an example of a more complex composable.
